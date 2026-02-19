@@ -402,9 +402,15 @@ main .our-portfolio .projects .project{
 }
 main .our-portfolio .projects .project .project-img {
     max-width: 50%;
+    
 }
 main .our-portfolio .projects .project .project-img img {
     width: 100%;
+    transition: 0.4s ease-in-out;
+    box-shadow: 5px 5px 5px #00000020;
+}
+main .our-portfolio .projects .project .project-img img:hover {
+    transform: scale(1.01);
 }
 main .our-portfolio .projects .project .project-description{
     max-width: 50%;
