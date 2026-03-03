@@ -22,7 +22,7 @@ h2{
     /* start header section */
 header{
     min-height: 100svh;
-    background-image: linear-gradient(rgb(0,0,0,0.85) , rgba(0, 0, 0, 0.85)) , url(../images/background-img.jpg);
+    background-image: linear-gradient(rgb( 0, 0, 0, 0.85) , rgba(0, 0, 0, 0.85)) , url(../images/background-img.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1028,3 +1028,4 @@ footer p span{
 
 
 }
+
