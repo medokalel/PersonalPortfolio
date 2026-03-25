@@ -18,36 +18,35 @@ h2{
     font-weight: 600;
     text-transform: capitalize;
 }
+section{
+    scroll-margin-top: 50px;
+}
 
     /* start header section */
 header{
+    position: relative;
     min-height: 100svh;
     background-image: linear-gradient(rgb( 0, 0, 0, 0.85) , rgba(0, 0, 0, 0.85)) , url(../images/background-img.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-attachment: fixed;
 }
-header nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
+header .navbar{
+    transition: 0.6s;
 }
-header nav .logo span{
+header .navbar.scrolled{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+header .navbar .logo{
     color: var(--main-color);
     font-size: 1.5rem;
     font-weight: bold;
 }
-header nav ul{
-    list-style: none;
-    display: flex;
-}
-header nav .nav-links{
-    transition: all 0.4s ease-in;
-}
 header nav ul li{
-    padding: 20px 10px;
+    padding: 6px;
 }
-header nav ul li a{
+/* header nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
@@ -58,7 +57,7 @@ header nav ul li a.active{
 }
 header nav ul li a:hover{
     color: #da8e00c8;
-}
+} */
 header .header-info{
     height: 100vh;
     display: flex;
@@ -86,42 +85,22 @@ header .header-info .job-title{
     align-items: center;
     gap: 5px;
 }
-/* hide checkbox */
-#menu-toggle {
-    display: none;
+#typing{
+    font-size: 1.625rem;
+    font-family: 'Source Sans 3', Tahoma, Geneva, Verdana, sans-serif;
 }
-.burger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+#typing::after {
+    content: "|";
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
 }
-.burger span {
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    margin: 2px 0;
-    transition: 0.3s;
-    border-radius: 2px;
-}
+
 
 /* ===== Typing Animation ===== */
-
-.typing {
-    font-size: 1.625rem;
-    display: inline-block;
-    width: 9ch;
-    overflow: hidden;
-    white-space: nowrap;
-    font-family: monospace;
-    border-right: 2px solid #fff;
-    animation: typing    2.5s infinite;
-    vertical-align: middle;
-}
-@keyframes typing {
-    0%   { width: 0;}
-    30%  { width: 9ch; }
-    70%  { width: 9ch; }
-    100%  { width: 0;}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* end header section */
