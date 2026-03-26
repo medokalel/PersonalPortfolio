@@ -288,6 +288,10 @@ main #services .container .title-box::after{
     transform: translateX(-50%);
     
 }
+main #services .card h3{
+    margin-left: -24px;
+    margin-right: -24px;
+}
 main #services .circle{
     display: flex;
     justify-content: center;

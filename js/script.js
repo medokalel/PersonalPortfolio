@@ -1,5 +1,16 @@
 
+// close navbarCollapse when click on nav-linke
+let navLinks = document.querySelectorAll(".nav-link");
+let navbarCollapse = document.querySelector(".navbar-collapse");
 
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    let bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+      toggle: false
+    });
+    bsCollapse.hide();
+  });
+});
 
 
 // Typing effect designer,developer,freelancer
