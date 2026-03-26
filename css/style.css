@@ -254,10 +254,67 @@ main #about .info .btns a:hover{
 main #services{
     background-color: #F1F1F1;
 }
+main #services .container .title-box{
+    position: relative;
+    margin-bottom: 64px;
+}
+main #services .container .title-box span{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 1px;
+    background-color: var(--main-color);
+}
+main #services .container .title-box::before{
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main #services .container .title-box::after{
+    content: "";
+    width: 160px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+main #services .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+        transition: all 0.6s;
+}
+main #services .circle i{
+    font-size: 2.2rem;
+}
+main #services .card:hover .circle{
+    background-color: var(--main-color);
+    border-color: rgb(209, 202, 194);
+    color: white;
+}
+
+/* main #services{
+    background-color: #F1F1F1;
+}
 main #services .our-services{
     padding: 90px 40px;
     text-align: center;
-    max-width: 1170px;
+    max-width: 1350px;
     margin: auto;
 }
 main #services .our-services .our-services-header{
@@ -281,7 +338,6 @@ main #services .our-services .our-services-header::before{
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    
 }
 main #services .our-services .our-services-header::after{
     content: "";
@@ -303,7 +359,7 @@ main #services .our-services .services-cards{
     justify-content: center;
 }
 main #services .our-services .services-cards .one-card{
-    max-width: 25%;
+    max-width: 330px;
     padding: 40px 15px;
     transition: 0.5s;
 }
@@ -324,13 +380,12 @@ main #services .our-services .services-cards .one-card h3{
     color: #333333;
     font-size: 1.5rem;
     font-weight: 500;
-    text-transform: uppercase;
     margin-bottom: 15px;
 }
 main #services .our-services .services-cards .one-card p{
     color: #555555;
     font-size: 1rem;
-}
+} */
 
 /* ========================= End Services Section ========================= */
 
@@ -839,7 +894,7 @@ footer p span{
         margin-bottom: 15px;
         font-size: 0.875rem;
     }
-    main .our-services .services-cards .card{
+    main .our-services .services-cards .one-card{
         max-width: 40%;
     }
     main .our-portfolio .products{
@@ -947,7 +1002,7 @@ footer p span{
     main .our-services .services-cards{
         flex-direction: column;
     }
-    main .our-services .services-cards .card{
+    main .our-services .services-cards .one-card{
         margin: auto;
         max-width: 350px;
     }
