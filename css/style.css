@@ -839,10 +839,6 @@ footer p span{
 /* Media Query */
 
 @media screen and (max-width:1199px){
-    header nav{
-        justify-content: space-between; 
-        padding: 0 30px;
-    }
     main #about{
         max-width: 1000px;
     }
@@ -853,9 +849,6 @@ footer p span{
     main #about .box .box-img{
         width: 300px;
         height: 300px;
-    }
-    main .our-services{
-        max-width: 1000px;
     }
     main .our-portfolio{
         max-width: 1050px;
@@ -897,9 +890,6 @@ footer p span{
     main #about .info .summary ul li{
         margin-bottom: 15px;
         font-size: 0.875rem;
-    }
-    main .our-services .services-cards .one-card{
-        max-width: 40%;
     }
     main .our-portfolio .products{
         gap: 20px;
@@ -943,35 +933,8 @@ footer p span{
     header .header-info .job-title{
         font-size: 1.125rem;
     }
-    .typing{
+    header .header-info .job-title #typing {
         font-size: 1.125rem;
-    }
-    header nav {
-        position: relative;
-        justify-content: space-around;
-        padding: 18px 0;
-    }
-    .burger {
-        display: flex;
-    }
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #33333376;
-        display: none;
-    }
-    .nav-links ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-links ul li {
-        padding: 15px 0;
-    }
-    /* show menu */
-    #menu-toggle:checked ~ .nav-links {
-        display: block;
     }
     main #about{
         padding: 60px 10px;
@@ -1002,13 +965,6 @@ footer p span{
     }
     main #about .info .btns a{
         padding: 10px;
-    }
-    main .our-services .services-cards{
-        flex-direction: column;
-    }
-    main .our-services .services-cards .one-card{
-        margin: auto;
-        max-width: 350px;
     }
     main .our-portfolio .products{
         flex-direction: column;
