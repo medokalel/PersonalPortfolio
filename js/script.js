@@ -13,6 +13,35 @@ navLinks.forEach(link => {
 });
 
 
+// remove and add class active in navLinks >> a 
+let sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach((section) => {
+    let sectionTop = section.offsetTop - 100;
+    let sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((a) => {
+    a.classList.remove("active");
+
+    if (a.getAttribute("href") === "#" + current) {
+      a.classList.add("active");
+    }
+  });
+  if (scrollY < 100) {
+    navLinks.forEach(a => a.classList.remove("active"));
+    navLinks[0].classList.add("active"); // HOME
+  }
+});
+
+
 // Typing effect designer,developer,freelancer
 let words = [
   { text: "Designer", stop: 2 },   // يسيب "De"
@@ -50,7 +79,6 @@ function typeEffect() {
 
   setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
-
 typeEffect();
 
 
@@ -65,6 +93,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
+
+// Swiper Js for testimonials section
 new Swiper(".card-wrapper", {
   loop: true,
   autoplay: {
