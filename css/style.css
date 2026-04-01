@@ -509,16 +509,18 @@ main .our-work h4{
 
 /* Client Feedback Section */
 
-main .client-feedback{
+
+
+main #testimonials{
     padding: 90px 40px;
-    max-width: 1170px;
+    max-width: 850px;
     margin: auto;
     text-align: center;
 }
-main .client-feedback .client-feedback-header{
+main #testimonials .client-feedback-header{
     position: relative;
 }
-main .client-feedback .client-feedback-header span{
+main #testimonials .client-feedback-header span{
     position: absolute;
     left: 50%;
     bottom: -20px;
@@ -527,7 +529,7 @@ main .client-feedback .client-feedback-header span{
     height: 1px;
     background-color: var(--main-color);
 }
-main .client-feedback .client-feedback-header::before{
+main #testimonials .client-feedback-header::before{
     content: "";
     width: 70px;
     height: 1px;
@@ -538,7 +540,7 @@ main .client-feedback .client-feedback-header::before{
     transform: translateX(-50%);
     
 }
-main .client-feedback .client-feedback-header::after{
+main #testimonials .client-feedback-header::after{
     content: "";
     width: 160px;
     height: 1px;
@@ -549,53 +551,49 @@ main .client-feedback .client-feedback-header::after{
     transform: translateX(-50%);
     
 }
-main .client-feedback .client-feedback-header h2{
+main #testimonials .client-feedback-header h2{
     margin-bottom: 90px;
 }
-main .feedback-box{
-    max-width: 750px;
-    margin: auto;
+main #testimonials .swiper ul{
+    display: flex;
+    gap: 20px;
+}
+main #testimonials .swiper ul li{
+    max-width: 98%;
     padding: 40px;
+    margin: auto;
+    text-align: left;
     background-image: linear-gradient(135deg, var(--main-color) 0% 20%, #f1f1f1 20% 100%);
     border-radius: 8px;
-    position: relative;
     display: flex;
+    gap: 50px;
 }
-main .feedback-box .feedback-img{
-    width: 20%;
-    text-align: center;
-    padding: 10px;
-}
-main .feedback-box .feedback-img .img-border{
-    background-image: url(../images/3.png);
-    background-size: cover;
-    background-position: center;
-    width: 100px;
-    height: 100px;
+main #testimonials .swiper ul li .feedback-img img{
     border-radius: 50%;
-    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-top: 30px;
 }
-main .feedback-box .feedback-info{
-    width: 60%;
-    text-align: left;
-}
-main .feedback-box .feedback-info h3{
+main #testimonials .swiper ul li .feedback-info h3{
     font-size: 1.5rem;
     font-weight: 500;
     color: #333333;
     margin-bottom: 5px;
 }
-main .feedback-box .feedback-info .location{
+main #testimonials .swiper ul li .feedback-info .location{
     display: flex;
     align-items: center;
     color: #555555;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
-main .feedback-box .feedback-info .location h4{
+main #testimonials .swiper ul li .feedback-info .location h4{
     font-size: 0.875rem;
     font-weight: 400;
+    margin: 0;
 }
-main .feedback-box .feedback-info p{
+main #testimonials .swiper ul li .feedback-info p{
     font-size: 1rem;
     color: #333333;
     margin-top: 15px;
@@ -603,6 +601,11 @@ main .feedback-box .feedback-info p{
     line-height: 1.6rem;
     font-style: italic;
     margin-bottom: 10px;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
 }
 
 /* ========================= End Feedback Section ========================= */
@@ -912,7 +915,7 @@ footer p span{
     main .our-portfolio .projects .project{
         flex-direction: column;
         margin-bottom: 20px;
-    }
+    }   
     main .our-portfolio .projects .project .project-img , main .our-portfolio .projects .project .project-description{
         margin: auto;
         padding: 12px 0;
@@ -930,12 +933,9 @@ footer p span{
     header .header-info h3{
         font-size: 1.375rem;
     }
-    header .header-info .job-title{
+    header .header-info .job-title, #typing{
         font-size: 1.125rem;
-    }
-    header .header-info .job-title #typing {
-        font-size: 1.125rem;
-    }
+    }   
     main #about{
         padding: 60px 10px;
         flex-direction: column;
@@ -986,34 +986,22 @@ footer p span{
         font-size: 1.625rem;
         margin-bottom: 0;
     }
-    main .feedback-box{
-        max-width: 420px;
+    main #testimonials{
+        width: 600px;
+    }
+    main #testimonials .swiper ul li{
+        max-width: 98%;
         flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        background-image: linear-gradient(135deg, var(--main-color) 0% 21%, #f1f1f1 21% 100%);
+        text-align: center;
+        background-image: linear-gradient(135deg, var(--main-color) 0% 27%, #f1f1f1 27% 100%);
     }
-    main .feedback-box .feedback-img{
-        width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
+    main #testimonials .swiper ul li .feedback-img img{
+        width: 120px;
+        height: 120px;
     }
-    main .feedback-box .feedback-img .img-border{
-        margin: auto;
-        width: 110px;
-        height: 110px;
-    }
-    main .feedback-box .feedback-info{
-        width: 100%;
-        padding: 0;
-    }
-    main .feedback-box .feedback-info h3{
-        font-size: 1.625rem;
-        margin: 0;
-    }
-    main .feedback-box .feedback-info p{
-        margin: 10px 0;
-    }
+    main #testimonials .swiper ul li .feedback-info{
+        text-align: left;
+    } 
     main .our-blog{
         padding: 20px;
     }

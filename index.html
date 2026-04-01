@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mohamed Sayedahmed Mohamed Khalel">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <title>FRONTX | Modern Front-End Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Mohamed Sayedahmed Mohamed Khalel">
+    <!-- Linking swiperJs CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <title>FRONTX | Modern Front-End Development</title>
 </head>
 <body>
   <header>
@@ -213,34 +215,59 @@
             </div>
         </div>
     </section>
-    <section id="testimonials" class="client-feedback">
-        <div class="client-feedback-header">
-            <h2>Client's Feedback
-                <span></span>
-            </h2>
-        </div>
-        <div class="feedback-box">
+    <section id="testimonials">
+      <div class="client-feedback-header">
+        <h2>Client's Feedback
+          <span></span>
+        </h2>
+      </div>
+      <div class="swiper card-wrapper">
+        <ul class="swiper-wrapper list-unstyled">
+          <li class="swiper-slide">
             <div class="feedback-img">
-                <div class="img-border">
-                </div>
+              <img src="images/3.png" alt="">
             </div>
             <div class="feedback-info">
-                <h3>Alex ander</h3>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot fa-2xs"></i>
-                    <h4>united</h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel, enim voluptatibus harum minus vero,
-                    dicta optio, ut nostrum quo hic pariatur assumenda eaque distinctio accusantium atque? Deserunt, harum dignissimos.</p>
-                <div>
-                    <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                    <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                    <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                    <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
-                    <i class="fa-regular fa-star fa-xs" style="color: #FFD43B;"></i>
-                </div>
+              <h3>Alex ander</h3>
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-2xs"></i>
+                <h4>united</h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel, enim voluptatibus harum minus vero,
+                dicta optio, ut nostrum quo hic pariatur assumenda eaque distinctio accusantium atque? Deserunt, harum dignissimos.</p>
+              <div>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star fa-xs" style="color: #FFD43B;"></i>
+              </div>
             </div>
-        </div>
+          </li>
+          <li class="swiper-slide">
+            <div class="feedback-img">
+              <img src="images/3.png" alt="">
+            </div>
+            <div class="feedback-info">
+              <h3>Alex ander</h3>
+              <div class="location">
+                <i class="fa-solid fa-location-dot fa-2xs"></i>
+                <h4>united</h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad vel, enim voluptatibus harum minus vero,
+                dicta optio, ut nostrum quo hic pariatur assumenda eaque distinctio accusantium atque? Deserunt, harum dignissimos.</p>
+              <div>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star fa-xs" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-star fa-xs" style="color: #FFD43B;"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination mb-3"></div> 
+      </div>
     </section>
     <section id="blog" class="blog">
         <div class="our-blog">
@@ -318,6 +345,8 @@
       <!-- <p>Created by <span>Mohamed Khalel</span> | &copy; 2024 All Rights Reserved.</p> -->
       <p>&copy; Copy Right 2024 By <span>Mohamed Khalel</span> All Rights Reserved.</p>
   </footer>
+    <!-- Linking swiperJs Script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>

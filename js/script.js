@@ -64,3 +64,16 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+new Swiper(".card-wrapper", {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
