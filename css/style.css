@@ -312,85 +312,6 @@ main #services .card:hover .circle{
     color: white;
 }
 
-/* main #services{
-    background-color: #F1F1F1;
-}
-main #services .our-services{
-    padding: 90px 40px;
-    text-align: center;
-    max-width: 1350px;
-    margin: auto;
-}
-main #services .our-services .our-services-header{
-    position: relative;
-}
-main #services .our-services .our-services-header span{
-    position: absolute;
-    left: 50%;
-    bottom: -20px;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 1px;
-    background-color: var(--main-color);
-}
-main #services .our-services .our-services-header::before{
-    content: "";
-    width: 70px;
-    height: 1px;
-    background-color: var(--main-color);
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-main #services .our-services .our-services-header::after{
-    content: "";
-    width: 160px;
-    height: 1px;
-    background-color: var(--main-color);
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-main #services .our-services .our-services-header h2{
-    margin-bottom: 60px;
-}
-main #services .our-services .services-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-main #services .our-services .services-cards .one-card{
-    max-width: 330px;
-    padding: 40px 15px;
-    transition: 0.5s;
-}
-main #services .our-services .services-cards .one-card:hover{
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    background-color: #fff;
-}
-main #services .our-services .services-cards .one-card:hover i{
-    transform: scale(1.3);
-}
-main #services .our-services .services-cards .one-card i{
-    color: var(--main-color);
-    font-size: 1.875rem;
-    margin-bottom: 20px;
-    transition: 0.5s;
-}
-main #services .our-services .services-cards .one-card h3{
-    color: #333333;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-main #services .our-services .services-cards .one-card p{
-    color: #555555;
-    font-size: 1rem;
-} */
-
 /* ========================= End Services Section ========================= */
 
 /* our portfolio */
@@ -987,7 +908,7 @@ footer p span{
         margin-bottom: 0;
     }
     main #testimonials{
-        width: 600px;
+        max-width: 600px;
     }
     main #testimonials .swiper ul li{
         max-width: 98%;
