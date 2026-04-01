@@ -362,6 +362,7 @@ main .our-portfolio .our-portfolio-header h2{
 main .our-portfolio .projects .project{
     display: flex;
     margin: 20px 0;
+    overflow: hidden;
 }
 main .our-portfolio .projects .project .project-img {
     max-width: 50%;
