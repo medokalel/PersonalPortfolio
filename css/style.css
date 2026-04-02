@@ -119,7 +119,7 @@ main #about{
     margin: auto;
     display: flex;
     justify-content: center;
-    max-width: 1170px;
+    max-width: 1300px;
 }
 main #about .box{
     width: 40%; 
@@ -318,7 +318,7 @@ main #services .card:hover .circle{
 
 main .our-portfolio{
     padding: 60px 40px;
-    max-width: 1170px;
+    max-width: 1300px;
     margin: auto;
 }
 main .our-portfolio .our-portfolio-header span{
@@ -365,8 +365,7 @@ main .our-portfolio .projects .project{
     overflow: hidden;
 }
 main .our-portfolio .projects .project .project-img {
-    max-width: 50%;
-    
+    max-width: 45%;
 }
 main .our-portfolio .projects .project .project-img img {
     width: 100%;
@@ -377,7 +376,7 @@ main .our-portfolio .projects .project .project-img img:hover {
     box-shadow: 5px 5px 5px #00000020;
 }
 main .our-portfolio .projects .project .project-description{
-    max-width: 50%;
+    max-width: 55%;
     padding: 40px;
 }
 main .our-portfolio .projects .project .project-description h3{
@@ -832,7 +831,7 @@ footer p span{
 }
 @media screen and (max-width:963px){
     main .our-portfolio{
-        max-width: 600px;
+        max-width: 800px;
     }
     main .our-portfolio .projects .project{
         flex-direction: column;
@@ -841,7 +840,7 @@ footer p span{
     main .our-portfolio .projects .project .project-img , main .our-portfolio .projects .project .project-description{
         margin: auto;
         padding: 12px 0;
-        max-width: 500px;
+        max-width: 700px;
     }
 }
 @media screen and (max-width:767px){
